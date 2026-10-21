@@ -38,7 +38,7 @@ export async function POST(request: Request) {
   try {
     const genAI = new GoogleGenerativeAI(apiKey);
     const model = genAI.getGenerativeModel({
-      model: "gemini-2.0-flash",
+      model: "gemini-3.8-flash",
       systemInstruction:
         "Ты пишешь продающие презентации экспертов на русском языке. Следуй структуре и тону из запроса пользователя.",
     });
